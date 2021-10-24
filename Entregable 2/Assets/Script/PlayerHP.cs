@@ -15,6 +15,7 @@ public class PlayerHP : MonoBehaviour
     void Start()
     {
         Debug.Log($"{PlayerHp} - {damage} = {PlayerHp - damage}");
+        PlayerHp = PlayerHp - damage;
     }
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class PlayerHP : MonoBehaviour
             {
                 Debug.Log($"Te has quedado sin vida… GAME OVER");
             }
-            else if (PlayerHp == 30)
+            else if (PlayerHp <= 30)
             {
                 Debug.Log($" ¡¡¡Tienes poca vida!!!");
             }

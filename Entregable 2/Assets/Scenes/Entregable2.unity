@@ -340,9 +340,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddab943e36f62a548ae8746ed0609fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGameOver: 0
+  isGameOver: 1
   PlayerHp: 90
-  damage: 60
+  damage: 120
 --- !u!4 &845428511
 Transform:
   m_ObjectHideFlags: 0
