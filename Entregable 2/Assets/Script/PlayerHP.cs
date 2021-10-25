@@ -8,7 +8,7 @@ using UnityEngine;
 public class PlayerHP : MonoBehaviour
 {
     [SerializeField] private bool isGameOver;
-    public int PlayerHp = 40;
+    public int PlayerHp = 150;
     public int damage = 60;
 
     // Start is called before the first frame update
@@ -27,7 +27,7 @@ public class PlayerHP : MonoBehaviour
             {
                 Debug.Log($"Te has quedado sin vida… GAME OVER");
             }
-            else if (PlayerHp <= 30)
+            else if (PlayerHp < 30)
             {
                 Debug.Log($" ¡¡¡Tienes poca vida!!!");
             }
